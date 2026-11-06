@@ -1,0 +1,7 @@
+node_modules/
+dist/
+test-results.json
+.test-profile/
+*-inspect.txt
+electron-runtime.zip
+release-notes.md

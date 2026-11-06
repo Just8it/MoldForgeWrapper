@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoldForge</title>
+    <meta name="description" content="Generate printable mold systems from your 3D models, right in the browser." />
+    <meta name="theme-color" content="#4f86f7" />
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./icon.svg" />
+    <script type="module" crossorigin src="./assets/index-BLOHlxYY.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-D5Nmesa2.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true">
+          <rect x="3" y="9" width="26" height="20" rx="3" fill="var(--accent)" />
+          <rect x="3" y="3" width="26" height="5" rx="2" fill="var(--accent-2)" />
+          <circle cx="16" cy="19" r="5" fill="var(--surface)" />
+        </svg>
+        <span>MoldForge</span>
+      </div>
+      <span class="tagline" id="tagline"></span>
+      <div class="topbar-end" id="lang"></div>
+    </header>
+    <main class="layout">
+      <aside class="sidebar" id="sidebar"></aside>
+      <section class="stage">
+        <div id="viewer" class="viewer"></div>
+        <div class="toolbar" id="toolbar"></div>
+        <div class="empty-hint" id="empty-hint">
+          <div class="empty-card">
+            <h2 id="empty-title"></h2>
+            <p id="empty-text"></p>
+          </div>
+        </div>
+        <div class="busy" id="busy" hidden><span class="spinner"></span><span id="busy-text"></span></div>
+        <div class="help" id="help"></div>
+      </section>
+    </main>
+  </body>
+</html>

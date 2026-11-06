@@ -1,0 +1,2 @@
+# Preserve the exact snapshot bytes so recorded SHA-256 hashes survive checkout.
+site/** -text
