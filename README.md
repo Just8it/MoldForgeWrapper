@@ -1,2 +1,2 @@
-An offline Windows wrapper for [MoldForge](https://nordiclayerlab.se/moldforge/app/) that bundles the website locally and blocks outbound requests.
-Use Node.js 22.12+ with `npm ci`, `npm test`, `npm run test:app`, and `npm run dist`, or download the portable EXE from [Releases](https://github.com/Just8it/MoldForgeWrapper/releases).
+An offline Windows wrapper for [MoldForge](https://nordiclayerlab.se/moldforge/app/) that bundles the website locally and blocks outbound requests, built with Node.js 26.13.1 and packaged with Electron 45.3.2 (bundled Node.js 24.22.2).
+Download the portable 1.0.2 EXE from [Releases](https://github.com/Just8it/MoldForgeWrapper/releases), or use Node.js 26.13.1 with `npm ci`, `npm test`, `npm run test:app`, and `npm run dist` to build it.

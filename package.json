@@ -1,6 +1,6 @@
 {
   "name": "moldforge-offline",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "description": "Offline MoldForge wrapper with network access blocked",
   "main": "main.cjs",
@@ -8,10 +8,10 @@
     "start": "electron .",
     "test": "node --test test/*.test.cjs",
     "test:app": "electron test/app.cjs",
-    "dist": "npm run test && node -e \"require('electron')\" && electron-builder --win portable --x64 --config.electronDist=node_modules/electron/dist"
+    "dist": "npm run test && electron-builder --win portable --x64"
   },
   "devDependencies": {
-    "electron": "45.2.3",
+    "electron": "45.3.1",
     "electron-builder": "26.18.0"
   },
   "build": {
@@ -26,6 +26,13 @@
       "target": "portable",
       "signAndEditExecutable": false
     },
-    "artifactName": "MoldForge-Offline-${version}-${arch}.${ext}"
+    "artifactName": "MoldForge-Offline-${version}-${arch}.${ext}",
+    "electronVersion": "45.3.2"
+  },
+  "engines": {
+    "node": ">=26.13.1 <27"
+  },
+  "overrides": {
+    "minimatch@>=7 <11.0.1": "11.0.8"
   }
 }
